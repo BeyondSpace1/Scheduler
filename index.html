@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="a">
+    <aside>
+        <div class="layer1">
+            <ul class="list1">
+                <li id="l0"><a href="#"> :)LOGO</a></li><br><br>
+                <li id="l1"><a href="#"> Home</a></li>
+                <li id="l2"><a href="#"> Dashboard</a></li>
+            </ul>
+        </div>
+    </aside>
+    <nav>
+        <div id="avt">AVATAR</div>
+        <div class="drop">
+            <ul>
+                <li>Name</li>
+                <li><a href="">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="main">
+            <h1>Dashboard</h1><br>
+            <div class="up">
+                <form action="#" id="f" method="get">
+                    <input type="date" name="" id="cal" min="2022-01-23">
+                    <button type="submit" id="go">Go</button>
+                </form>
+                <div id="new"> + </div>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th class="cell">Heads</th>
+                        <th class="cell">Heads</th>
+                        <th class="cell">Heads</th>
+                        <th class="cell">Heads</th>
+                        <th class="cell">Heads</th>
+                    </tr>
+                    <tr>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                    </tr>
+                    <tr>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                    </tr>
+                    <tr>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                    </tr>
+                    <tr>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                    </tr>
+                    <tr>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                    </tr>
+                    <tr>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                    </tr>
+                    <tr>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                    </tr>
+                    <tr>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                    </tr>
+                    <tr>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                        <td class="cell">Some data</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="down">
+                <div id="btn1">Print</div>
+                <div id="btn2">Download</div>
+            </div>
+        </div>
+    </main>
+    </div>
+    <div class="b">
+        <span class="close">&times;</span>
+        <form action="" id="f2">
+            Name: <input type="text" name="" id="" required max="25" min="5"><br><hr>
+            Email: <input type="email" name="" id=""><br><hr>
+            Mobile Number: <input type="tel" name="" id="" size="10" pattern="^\d{10}$" required><br><hr>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Reason(s)" required></textarea><br><hr>
+            <input type="date" name="" id="" min="2022-01-23" required><br><hr>
+            <button type="submit">Add appointment</button>
+            <button type="reset">Reset fields</button>
+        </form>
+    </div>
+</body>
+<script>
+    let avt=document.querySelector('#avt')
+    let drop=document.querySelector('.drop')
+    avt.addEventListener('click',()=>{
+        drop.classList.toggle('s')
+    })
+    let n=document.querySelector('#new')
+    let f2=document.querySelector('#f2')
+    let c=document.querySelector('.close')
+    let form1=document.querySelector('.b')
+    n.addEventListener('click',()=>{
+        console.log('opened')
+        form1.style.display='block'
+    })
+    c.addEventListener('click',()=>{
+        console.log('closed')
+        form1.style.display='none' 
+        f2.reset()
+})
+</script>
+</html>
