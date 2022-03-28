@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a471df1a92.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="a">
     <aside>
         <div class="layer1">
             <ul class="list1">
-                <li id="l0"><a href="#"> :)LOGO</a></li><br><br>
+                <li id="l0"><a href="https://dsvv.ac.in"><img src="./img/Logo2.jpg" alt=""></a></li><br><br>
                 <li id="l1"><a href="#"> Home</a></li>
                 <li id="l2"><a href="#"> Dashboard</a></li>
             </ul>
         </div>
     </aside>
     <nav>
-        <div id="avt">AVATAR</div>
+        <div id="avt"><i class="fa-solid fa-user fa-2x" id="user"></i></div>
         <div class="drop">
             <ul>
                 <li>Name</li>
-                <li><a href="">Logout</a></li>
+                <li><a href="signin.html">Logout</a></li>
             </ul>
         </div>
     </nav>
@@ -121,11 +125,11 @@
     <div class="b">
         <span class="close">&times;</span>
         <form action="" id="f2">
-            Name: <input type="text" name="" id="" required max="25" min="5"><br><hr>
-            Email: <input type="email" name="" id=""><br><hr>
-            Mobile Number: <input type="tel" name="" id="" size="10" pattern="^\d{10}$" required><br><hr>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Reason(s)" required></textarea><br><hr>
-            <input type="date" name="" id="" min="2022-01-23" required><br><hr>
+            <input type="text" name="" id="" required max="25" min="5" placeholder="Name"><br>
+            <input type="email" name="" id="" placeholder="Email"><br>
+            <input type="tel" name="" id="" size="10" pattern="^\d{10}$" required placeholder=" Mobile Number"><br>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Reason(s)" required placeholder=""></textarea><br>
+            <input type="date" name="" id="" min="2022-01-23" required placeholder=""><br>
             <button type="submit">Add appointment</button>
             <button type="reset">Reset fields</button>
         </form>
